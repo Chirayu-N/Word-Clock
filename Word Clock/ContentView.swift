@@ -87,9 +87,9 @@ struct ContentView: View {
                 
                 Text("EIGHT").foregroundColor(isSelected("EIGHT", "h") ? .black : .gray) + Text("NINE").foregroundColor(isSelected("NINE", "h") ? .black : .gray) + Text("TEN").foregroundColor(isSelected("TEN", "h") ? .black : .gray)
                 
-                Text("ELEVEN").foregroundColor(isSelected("ELEVEN", "h") ? .black : .gray) + Text("EL").foregroundColor(.gray) + Text("WORD").foregroundColor(.black)
+                Text("ELEVEN").foregroundColor(isSelected("ELEVEN", "h") ? .black : .gray) + Text("EL").foregroundColor(.gray) + Text("WORD").foregroundColor(.gray)
                 
-                Text("O'CLOCK").foregroundColor(isSelected("O'CLOCK", "h") ? .black : .gray) + Text("O").foregroundColor(.gray) + Text("TIME").foregroundColor(.black)
+                Text("O'CLOCK").foregroundColor(isSelected("O'CLOCK", "h") ? .black : .gray) + Text("CLOCK").foregroundColor(.gray)
             }
             .padding()
             .font(.title)
