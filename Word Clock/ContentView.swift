@@ -38,7 +38,7 @@ struct ContentView: View {
         }
         
         // IT IS ___ PAST HOUR
-        else if (minute <= 30) {
+        else if (minute <= 34) {
             // edge case: "TWENTY FIVE" (targeting two minute words)
             if (minuteWords[minute/5 - 1] == "TWENTY FIVE" && (word == "TWENTY" || (word == "FIVE" && wordType == "m"))) {
                 return true
@@ -58,7 +58,7 @@ struct ContentView: View {
         }
         
         // IT IS ___ TO HOUR
-        else if (minute > 30) {
+        else if (minute > 34) {
             if ((word == minuteWords[(60 - minute)/5 - 1] && wordType == "m") || word == "TO" || (word == hourWords[hour % 12] && wordType == "h")) {
                 return true
             }
